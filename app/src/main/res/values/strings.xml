@@ -1,0 +1,17 @@
+<resources>
+    <string name="initial_value">0</string>
+    <string name="app_name">Rugby Scoring App</string>
+    <string name="textTeamA">Team A</string>
+    <string name="textTeamB">Team B</string>
+    <string name="textReset">Reset</string>
+    <string name="textStatistics">Statistics</string>
+    <string name="textTry">Try</string>
+    <string name="textConversion">Conversion</string>
+    <string name="textPenalty">Penalty</string>
+    <string name="textDropGoal">Drop Goal</string>
+    <string name="textTryPlural">Tries</string>
+    <string name="textConversionPlural">Conversions</string>
+    <string name="textPenaltyPlural">Penalties</string>
+    <string name="textDropGoalPlural">Drop Goals</string>
+    <string name="textImportantNote">*Important note: this scoring app complies with the Rugby Union\'s scoring rules.</string>
+</resources>
