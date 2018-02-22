@@ -20,79 +20,44 @@
 
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zerodpHeight"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/layout_margin_medium"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="@string/textTeamA"
-                    android:textSize="@dimen/font_size_medium" />
+                    style="@style/teamTextView"
+                    android:text="@string/textTeamA" />
 
                 <TextView
                     android:id="@+id/score_team_a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/layout_margin_large"
-                    android:layout_marginTop="@dimen/layout_margin_medium"
-                    android:fontFamily="sans-serif-light"
-                    android:text="@string/initial_value"
-                    android:textSize="@dimen/font_size_large" />
+                    style="@style/scoreTextView"
+                    android:text="@string/initial_value" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/layout_margin_small"
-                    android:layout_marginEnd="@dimen/layout_margin_large"
-                    android:layout_marginStart="@dimen/layout_margin_large"
+                    style="@style/scoreButtons"
                     android:onClick="tryForTeamA"
-                    android:text="@string/textTry"
-                    android:textAllCaps="false" />
+                    android:text="@string/textTry" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/layout_margin_small"
-                    android:layout_marginEnd="@dimen/layout_margin_large"
-                    android:layout_marginStart="@dimen/layout_margin_large"
+                    style="@style/scoreButtons"
                     android:onClick="conversionForTeamA"
-                    android:text="@string/textConversion"
-                    android:textAllCaps="false" />
+                    android:text="@string/textConversion" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/layout_margin_small"
-                    android:layout_marginEnd="@dimen/layout_margin_large"
-                    android:layout_marginStart="@dimen/layout_margin_large"
+                    style="@style/scoreButtons"
                     android:onClick="penaltyForTeamA"
-                    android:text="@string/textPenalty"
-                    android:textAllCaps="false" />
+                    android:text="@string/textPenalty" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/layout_margin_small"
-                    android:layout_marginEnd="@dimen/layout_margin_large"
-                    android:layout_marginStart="@dimen/layout_margin_large"
+                    style="@style/scoreButtons"
                     android:onClick="dropGoalForTeamA"
-                    android:text="@string/textDropGoal"
-                    android:textAllCaps="false" />
+                    android:text="@string/textDropGoal" />
 
             </LinearLayout>
 
             <View
-                android:layout_width="1dp"
+                android:layout_width="@dimen/onedpWidth"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="@dimen/layout_margin_extra_small"
                 android:layout_marginTop="@dimen/layout_margin_medium"
@@ -101,83 +66,46 @@
             </View>
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zerodpHeight"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/layout_margin_medium"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="@string/textTeamB"
-                    android:textSize="@dimen/font_size_medium" />
+                    style="@style/teamTextView"
+                    android:text="@string/textTeamB" />
 
                 <TextView
                     android:id="@+id/score_team_b"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/layout_margin_large"
-                    android:layout_marginTop="@dimen/layout_margin_medium"
-                    android:fontFamily="sans-serif-light"
-                    android:text="@string/initial_value"
-                    android:textSize="@dimen/font_size_large" />
+                    style="@style/scoreTextView"
+                    android:text="@string/initial_value" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/layout_margin_small"
-                    android:layout_marginEnd="@dimen/layout_margin_large"
-                    android:layout_marginStart="@dimen/layout_margin_large"
+                    style="@style/scoreButtons"
                     android:onClick="tryForTeamB"
-                    android:text="@string/textTry"
-                    android:textAllCaps="false" />
+                    android:text="@string/textTry" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/layout_margin_small"
-                    android:layout_marginEnd="@dimen/layout_margin_large"
-                    android:layout_marginStart="@dimen/layout_margin_large"
+                    style="@style/scoreButtons"
                     android:onClick="conversionForTeamB"
-                    android:text="@string/textConversion"
-                    android:textAllCaps="false" />
+                    android:text="@string/textConversion" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/layout_margin_small"
-                    android:layout_marginEnd="@dimen/layout_margin_large"
-                    android:layout_marginStart="@dimen/layout_margin_large"
+                    style="@style/scoreButtons"
                     android:onClick="penaltyForTeamB"
-                    android:text="@string/textPenalty"
-                    android:textAllCaps="false" />
+                    android:text="@string/textPenalty" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/layout_margin_small"
-                    android:layout_marginEnd="@dimen/layout_margin_large"
-                    android:layout_marginStart="@dimen/layout_margin_large"
+                    style="@style/scoreButtons"
                     android:onClick="dropGoalForTeamB"
-                    android:text="@string/textDropGoal"
-                    android:textAllCaps="false" />
+                    android:text="@string/textDropGoal" />
 
             </LinearLayout>
 
         </LinearLayout>
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            style="@style/statisticsScores"
             android:layout_marginBottom="@dimen/layout_margin_medium"
             android:layout_marginTop="@dimen/layout_margin_medium"
             android:onClick="reset"
@@ -199,136 +127,96 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zerodpHeight"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/textTryPlural"
-                    android:textStyle="bold" />
+                    style="@style/statisticsCategories"
+                    android:text="@string/textTryPlural" />
 
                 <TextView
                     android:id="@+id/try_team_a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    style="@style/statisticsScores"
                     android:text="@string/initial_value" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/textConversionPlural"
-                    android:textStyle="bold" />
+                    style="@style/statisticsCategories"
+                    android:text="@string/textConversionPlural" />
 
                 <TextView
                     android:id="@+id/conversion_team_a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    style="@style/statisticsScores"
                     android:text="@string/initial_value" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/textPenaltyPlural"
-                    android:textStyle="bold" />
+                    style="@style/statisticsCategories"
+                    android:text="@string/textPenaltyPlural" />
 
                 <TextView
                     android:id="@+id/penalty_team_a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    style="@style/statisticsScores"
                     android:text="@string/initial_value" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/textDropGoalPlural"
-                    android:textStyle="bold" />
+                    style="@style/statisticsCategories"
+                    android:text="@string/textDropGoalPlural" />
 
                 <TextView
                     android:id="@+id/drop_goal_team_a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    style="@style/statisticsScores"
                     android:text="@string/initial_value" />
 
             </LinearLayout>
 
             <View
-                android:layout_width="1dp"
+                android:layout_width="@dimen/onedpWidth"
                 android:layout_height="match_parent"
                 android:background="@android:color/darker_gray">
 
             </View>
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zerodpHeight"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/textTryPlural"
-                    android:textStyle="bold" />
+                    style="@style/statisticsCategories"
+                    android:text="@string/textTryPlural" />
 
                 <TextView
                     android:id="@+id/try_team_b"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    style="@style/statisticsScores"
                     android:text="@string/initial_value" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/textConversionPlural"
-                    android:textStyle="bold" />
+                    style="@style/statisticsCategories"
+                    android:text="@string/textConversionPlural" />
 
                 <TextView
                     android:id="@+id/conversion_team_b"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    style="@style/statisticsScores"
                     android:text="@string/initial_value" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/textPenaltyPlural"
-                    android:textStyle="bold" />
+                    style="@style/statisticsCategories"
+                    android:text="@string/textPenaltyPlural" />
 
                 <TextView
                     android:id="@+id/penalty_team_b"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    style="@style/statisticsScores"
                     android:text="@string/initial_value" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/textDropGoalPlural"
-                    android:textStyle="bold" />
+                    style="@style/statisticsCategories"
+                    android:text="@string/textDropGoalPlural" />
 
                 <TextView
                     android:id="@+id/drop_goal_team_b"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    style="@style/statisticsScores"
                     android:text="@string/initial_value" />
 
             </LinearLayout>
