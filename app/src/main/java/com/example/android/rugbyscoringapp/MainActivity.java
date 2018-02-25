@@ -9,17 +9,38 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
-    int scoreTeamA, tryTeamA, conversionTeamA, penaltyTeamA, dropGoalTeamA;
-    int scoreTeamB, tryTeamB, conversionTeamB, penaltyTeamB, dropGoalTeamB;
+    int scoreTeamA;
+    int tryTeamA;
+    int conversionTeamA;
+    int penaltyTeamA;
+    int dropGoalTeamA;
+    int scoreTeamB;
+    int tryTeamB;
+    int conversionTeamB;
+    int penaltyTeamB;
+    int dropGoalTeamB;
 
-    String mScoreTeamA = "scoreTeamA", mTryTeamA = "tryTeamA", mConversionTeamA = "conversionTeamA",
-            mPenaltyTeamA = "penaltyTeamA", mDropGoalTeamA = "dropGoalTeamA", mScoreTeamB = "scoreTeamB",
-            mTryTeamB = "tryTeamB", mConversionTeamB = "conversionTeamB", mPenaltyTeamB = "penaltyTeamB",
-            mDropGoalTeamB = "dropGoalTeamB";
+    String mScoreTeamA = "scoreTeamA";
+    String mTryTeamA = "tryTeamA";
+    String mConversionTeamA = "conversionTeamA";
+    String mPenaltyTeamA = "penaltyTeamA";
+    String mDropGoalTeamA = "dropGoalTeamA";
+    String mScoreTeamB = "scoreTeamB";
+    String mTryTeamB = "tryTeamB";
+    String mConversionTeamB = "conversionTeamB";
+    String mPenaltyTeamB = "penaltyTeamB";
+    String mDropGoalTeamB = "dropGoalTeamB";
 
-    TextView scoreTeamATextView, triesTeamATextView, conversionsTeamATextView, penaltiesTeamATextView,
-            dropGoalsTeamATextView, scoreTeamBTextView, triesTeamBTextView, conversionsTeamBTextView,
-            penaltiesTeamBTextView, dropGoalsTeamBTextView;
+    TextView scoreTeamATextView;
+    TextView triesTeamATextView;
+    TextView conversionsTeamATextView;
+    TextView penaltiesTeamATextView;
+    TextView dropGoalsTeamATextView;
+    TextView scoreTeamBTextView;
+    TextView triesTeamBTextView;
+    TextView conversionsTeamBTextView;
+    TextView penaltiesTeamBTextView;
+    TextView dropGoalsTeamBTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,7 +105,6 @@ public class MainActivity extends AppCompatActivity {
         displayDropGoalTeamA(dropGoalTeamA);
         displayDropGoalTeamB(dropGoalTeamB);
     }
-
 
     /**
      * This method describes what happens when you click Try for Team A
@@ -269,5 +289,4 @@ public class MainActivity extends AppCompatActivity {
     public void displayDropGoalTeamB(int dropGoals) {
         dropGoalsTeamBTextView.setText(String.valueOf(dropGoals));
     }
-
 }

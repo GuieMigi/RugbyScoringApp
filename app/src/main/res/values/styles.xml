@@ -7,6 +7,7 @@
         <item name="colorButtonNormal">#63a4ff</item>
     </style>
 
+    <!-- The style used for the score buttons -->
     <style name="scoreButtons">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -19,6 +20,7 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
+    <!-- The style used for the statistics TextViews -->
     <style name="statisticsCategories">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -26,12 +28,14 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <!-- The style used for the statistics scores TextViews -->
     <style name="statisticsScores">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>
     </style>
 
+    <!-- The style used for the teams' score TextViews -->
     <style name="scoreTextView" parent="statisticsScores">
         <item name="android:layout_marginBottom">@dimen/layout_margin_large</item>
         <item name="android:layout_marginTop">@dimen/layout_margin_medium</item>
@@ -39,6 +43,7 @@
         <item name="android:textSize">@dimen/font_size_large</item>
     </style>
 
+    <!-- The style used for the teams' name TextViews -->
     <style name="teamTextView" parent="statisticsScores">
         <item name="android:layout_marginTop">@dimen/layout_margin_medium</item>
         <item name="android:fontFamily">sans-serif-medium</item>
