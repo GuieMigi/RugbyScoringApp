@@ -12,13 +12,29 @@ public class MainActivity extends AppCompatActivity {
     int scoreTeamA, tryTeamA, conversionTeamA, penaltyTeamA, dropGoalTeamA;
     int scoreTeamB, tryTeamB, conversionTeamB, penaltyTeamB, dropGoalTeamB;
 
-    String mScoreTeamA = "scoreTeamA", mTryTeamA = "tryTeamA", mConversionTeamA = "conversionTeamA", mPenaltyTeamA = "penaltyTeamA", mDropGoalTeamA = "dropGoalTeamA";
-    String mScoreTeamB = "scoreTeamB", mTryTeamB = "tryTeamB", mConversionTeamB = "conversionTeamB", mPenaltyTeamB = "penaltyTeamB", mDropGoalTeamB = "dropGoalTeamB";
+    String mScoreTeamA = "scoreTeamA", mTryTeamA = "tryTeamA", mConversionTeamA = "conversionTeamA",
+            mPenaltyTeamA = "penaltyTeamA", mDropGoalTeamA = "dropGoalTeamA", mScoreTeamB = "scoreTeamB",
+            mTryTeamB = "tryTeamB", mConversionTeamB = "conversionTeamB", mPenaltyTeamB = "penaltyTeamB",
+            mDropGoalTeamB = "dropGoalTeamB";
+
+    TextView scoreTeamATextView, triesTeamATextView, conversionsTeamATextView, penaltiesTeamATextView,
+            dropGoalsTeamATextView, scoreTeamBTextView, triesTeamBTextView, conversionsTeamBTextView,
+            penaltiesTeamBTextView, dropGoalsTeamBTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        scoreTeamATextView = findViewById(R.id.score_team_a);
+        triesTeamATextView = findViewById(R.id.try_team_a);
+        conversionsTeamATextView = findViewById(R.id.conversion_team_a);
+        penaltiesTeamATextView = findViewById(R.id.penalty_team_a);
+        dropGoalsTeamATextView = findViewById(R.id.drop_goal_team_a);
+        scoreTeamBTextView = findViewById(R.id.score_team_b);
+        triesTeamBTextView = findViewById(R.id.try_team_b);
+        conversionsTeamBTextView = findViewById(R.id.conversion_team_b);
+        penaltiesTeamBTextView = findViewById(R.id.penalty_team_b);
+        dropGoalsTeamBTextView = findViewById(R.id.drop_goal_team_b);
         displayScoreTeamA(0);
         displayScoreTeamB(0);
         displayTryTeamA(0);
@@ -70,13 +86,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-        /**
-         * This method describes what happens when you click Try for Team A
-         */
+    /**
+     * This method describes what happens when you click Try for Team A
+     */
     public void tryForTeamA(View view) {
         final int TRYFORTEAMA = 5;
         scoreTeamA = scoreTeamA + TRYFORTEAMA;
-        tryTeamA ++;
+        tryTeamA++;
         displayScoreTeamA(scoreTeamA);
         displayTryTeamA(tryTeamA);
     }
@@ -188,80 +204,70 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Team A.
      */
     public void displayScoreTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.score_team_a);
-        scoreView.setText(String.valueOf(score));
+        scoreTeamATextView.setText(String.valueOf(score));
     }
 
     /**
      * Displays the given score for Team B.
      */
     public void displayScoreTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.score_team_b);
-        scoreView.setText(String.valueOf(score));
+        scoreTeamBTextView.setText(String.valueOf(score));
     }
 
     /**
      * Displays the number of tries for Team A.
      */
     public void displayTryTeamA(int tries) {
-        TextView scoreView = (TextView) findViewById(R.id.try_team_a);
-        scoreView.setText(String.valueOf(tries));
+        triesTeamATextView.setText(String.valueOf(tries));
     }
 
     /**
      * Displays the number of conversions for Team A.
      */
     public void displayConversionTeamA(int conversions) {
-        TextView scoreView = (TextView) findViewById(R.id.conversion_team_a);
-        scoreView.setText(String.valueOf(conversions));
+        conversionsTeamATextView.setText(String.valueOf(conversions));
     }
 
     /**
      * Displays the number of penalties for Team A.
      */
     public void displayPenaltyTeamA(int penalties) {
-        TextView scoreView = (TextView) findViewById(R.id.penalty_team_a);
-        scoreView.setText(String.valueOf(penalties));
+        penaltiesTeamATextView.setText(String.valueOf(penalties));
     }
 
     /**
      * Displays the number of drop goals for Team A.
      */
     public void displayDropGoalTeamA(int dropGoals) {
-        TextView scoreView = (TextView) findViewById(R.id.drop_goal_team_a);
-        scoreView.setText(String.valueOf(dropGoals));
+        dropGoalsTeamATextView.setText(String.valueOf(dropGoals));
     }
 
     /**
      * Displays the number of tries for Team B.
      */
     public void displayTryTeamB(int tries) {
-        TextView scoreView = (TextView) findViewById(R.id.try_team_b);
-        scoreView.setText(String.valueOf(tries));
+        triesTeamBTextView.setText(String.valueOf(tries));
     }
 
     /**
      * Displays the number of conversions for Team B.
      */
     public void displayConversionTeamB(int conversions) {
-        TextView scoreView = (TextView) findViewById(R.id.conversion_team_b);
-        scoreView.setText(String.valueOf(conversions));
+        conversionsTeamBTextView.setText(String.valueOf(conversions));
     }
 
     /**
      * Displays the number of penalties for Team B.
      */
     public void displayPenaltyTeamB(int penalties) {
-        TextView scoreView = (TextView) findViewById(R.id.penalty_team_b);
-        scoreView.setText(String.valueOf(penalties));
+        penaltiesTeamBTextView.setText(String.valueOf(penalties));
     }
 
     /**
      * Displays the number of drop goals for Team B.
      */
     public void displayDropGoalTeamB(int dropGoals) {
-        TextView scoreView = (TextView) findViewById(R.id.drop_goal_team_b);
-        scoreView.setText(String.valueOf(dropGoals));
+        dropGoalsTeamBTextView.setText(String.valueOf(dropGoals));
     }
 
 }
