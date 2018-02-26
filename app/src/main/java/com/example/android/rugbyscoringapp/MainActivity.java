@@ -9,38 +9,38 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
-    int scoreTeamA;
-    int tryTeamA;
-    int conversionTeamA;
-    int penaltyTeamA;
-    int dropGoalTeamA;
-    int scoreTeamB;
-    int tryTeamB;
-    int conversionTeamB;
-    int penaltyTeamB;
-    int dropGoalTeamB;
+    private int scoreTeamA;
+    private int tryTeamA;
+    private int conversionTeamA;
+    private int penaltyTeamA;
+    private int dropGoalTeamA;
+    private int scoreTeamB;
+    private int tryTeamB;
+    private int conversionTeamB;
+    private int penaltyTeamB;
+    private int dropGoalTeamB;
 
-    String mScoreTeamA = "scoreTeamA";
-    String mTryTeamA = "tryTeamA";
-    String mConversionTeamA = "conversionTeamA";
-    String mPenaltyTeamA = "penaltyTeamA";
-    String mDropGoalTeamA = "dropGoalTeamA";
-    String mScoreTeamB = "scoreTeamB";
-    String mTryTeamB = "tryTeamB";
-    String mConversionTeamB = "conversionTeamB";
-    String mPenaltyTeamB = "penaltyTeamB";
-    String mDropGoalTeamB = "dropGoalTeamB";
+    private String mScoreTeamA = "scoreTeamA";
+    private String mTryTeamA = "tryTeamA";
+    private String mConversionTeamA = "conversionTeamA";
+    private String mPenaltyTeamA = "penaltyTeamA";
+    private String mDropGoalTeamA = "dropGoalTeamA";
+    private String mScoreTeamB = "scoreTeamB";
+    private String mTryTeamB = "tryTeamB";
+    private String mConversionTeamB = "conversionTeamB";
+    private String mPenaltyTeamB = "penaltyTeamB";
+    private String mDropGoalTeamB = "dropGoalTeamB";
 
-    TextView scoreTeamATextView;
-    TextView triesTeamATextView;
-    TextView conversionsTeamATextView;
-    TextView penaltiesTeamATextView;
-    TextView dropGoalsTeamATextView;
-    TextView scoreTeamBTextView;
-    TextView triesTeamBTextView;
-    TextView conversionsTeamBTextView;
-    TextView penaltiesTeamBTextView;
-    TextView dropGoalsTeamBTextView;
+    private TextView scoreTeamATextView;
+    private TextView triesTeamATextView;
+    private TextView conversionsTeamATextView;
+    private TextView penaltiesTeamATextView;
+    private TextView dropGoalsTeamATextView;
+    private TextView scoreTeamBTextView;
+    private TextView triesTeamBTextView;
+    private TextView conversionsTeamBTextView;
+    private TextView penaltiesTeamBTextView;
+    private TextView dropGoalsTeamBTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
