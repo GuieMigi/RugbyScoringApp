@@ -49,4 +49,10 @@
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:textSize">@dimen/font_size_medium</item>
     </style>
+
+    <style name="viewStyle">
+        <item name="android:layout_width">@dimen/viewDimension</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
 </resources>

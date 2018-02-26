@@ -57,11 +57,9 @@
             </LinearLayout>
 
             <View
-                android:layout_width="@dimen/viewDimension"
-                android:layout_height="match_parent"
+                style="@style/viewStyle"
                 android:layout_marginBottom="@dimen/layout_margin_extra_small"
-                android:layout_marginTop="@dimen/layout_margin_medium"
-                android:background="@android:color/darker_gray">
+                android:layout_marginTop="@dimen/layout_margin_medium">
 
             </View>
 
@@ -170,10 +168,7 @@
 
             </LinearLayout>
 
-            <View
-                android:layout_width="@dimen/viewDimension"
-                android:layout_height="match_parent"
-                android:background="@android:color/darker_gray">
+            <View style="@style/viewStyle">
 
             </View>
 
